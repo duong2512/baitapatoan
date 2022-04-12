@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+<h2>
+    Calculator
+</h2></br>
+    <input type="number" id="num1"> <input type="number" id="num2"> </br>
+    <button onclick="tong()">
+        Addition(+)
+    </button>
+    <button onclick="hieu()">
+        Subtraction(-)
+    </button>
+    <button onclick="tich()">
+        Multiplication(*)
+    </button>
+    <button onclick="thuong()">
+        Divison(/)
+    </button>
+</form>
+</body>
+</html>
+<script>
+    function tong(){
+        let so1 = document.getElementById("num1").value;
+        let so2 = document.getElementById("num2").value;
+        let sum = parseInt(so1) + parseInt(so2);
+        alert("result:" + sum);
+
+    }
+    function hieu(){
+        let so1 = document.getElementById("num1").value;
+        let so2 = document.getElementById("num2").value;
+        let sam = parseInt(so1) - parseInt(so2);
+        alert("result:" + sam);
+
+    }
+    function tich(){
+        let so1 = document.getElementById("num1").value;
+        let so2 = document.getElementById("num2").value;
+        let sem = parseInt(so1) * parseInt(so2);
+        alert("result:" + sem);
+    }
+    function thuong(){
+        let so1 = document.getElementById("num1").value;
+        let so2 = document.getElementById("num2").value;
+        let sim = parseInt(so1) / parseInt(so2);
+        alert("result:" + sim);
+    }
+
+</script>
